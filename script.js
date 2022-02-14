@@ -1,11 +1,16 @@
-namee = prompt("Введіть ім'я:");
-function formatName(namee){
-    index = namee.indexOf(' '); 
-
-
-    let string = namee[0].toUpperCase() + namee.slice(1,index) +' ' + namee[index+1].toUpperCase() + namee.slice(index+2);
-    console.log(string);
-
-
+const course = 28;
+let input = prompt('Введіть суму:');
+let sum = input.split('U');
+console.log(sum[0]);
+money = +sum[0];
+valute = sum[1];
+function convertMoney(){
+if (valute=='AH'){
+    console.log(Math.round(money /  course) + ' USD');
+}else{
+  
+    console.log(money*course + ' UAH');
 }
-formatName("namee");
+}
+
+convertMoney();
